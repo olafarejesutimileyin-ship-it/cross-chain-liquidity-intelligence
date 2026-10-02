@@ -1,21 +1,30 @@
 # Cross-Chain Liquidity Acquisition Intelligence
 
-An end-to-end on-chain analytics and business intelligence pipeline designed to transform raw decentralized exchange (DEX) activity into actionable protocol growth intelligence. 
+An end-to-end on-chain analytics and business intelligence pipeline designed to transform raw decentralized exchange (DEX) activity into actionable protocol growth intelligence.
 
-🔗 **Live Dune Dashboard:** [Cross-Chain Liquidity Acquisition Intelligence](https://dune.com/the_olafare1/cross-chain-liquidity-acquisition-intelligence)[cite: 58]
+🔗 **Live Dune Dashboard:** [Cross-Chain Liquidity Acquisition Intelligence](https://dune.com/the_olafare1/cross-chain-liquidity-acquisition-intelligence)  
+📄 **Executive Strategy Presentation:** [View Full PDF Deck](./CROSS-CHAIN%20LIQUIDITY%20ACQUISITION%20INTELLIGENCE.pptx%20(1).pdf)
 
 ---
 
-## Analytical Framework & Methodology
+## Project Overview
 
-This project goes beyond aggregate volume metrics by executing a rigorous, multi-stage qualification and scoring framework:
+Most protocol growth strategies rely on guesswork or surface-level volume metrics. This repository demonstrates a rigorous, data-backed system that bridges raw blockchain data with real commercial execution. 
 
-1. **Market Discovery:** Analyzed $156.9B+ in cross-chain high-value DEX flow ($10k+ swaps) across Ethereum, Base, Arbitrum, Optimism, and Solana[cite: 11, 54].
-2. **Entity & Infrastructure Screening:** Filtered out protocols, DEX routers, bridges, and non-commercial noise to isolate true wallet behaviors[cite: 17].
-3. **Behavioral Automation Risk Filtering:** Scanned high-frequency wallets and automated bots (removing accounts executing tens of thousands of programmatic trades) to ensure commercial relevance[cite: 19].
-4. **Liquidity Impact & Scoring:** Built multi-dimensional composite scoring models combining volume scale, average ticket size, human likelihood, routing flexibility, and primary venue concentration[cite: 25, 31].
-5. **Protocol Opportunity Modeling:** Mapped qualified wallets to incumbent competitor venues and modeled hypothetical capture scenarios (5% vs. 10%) to drive targeted business development[cite: 35].
-6. **Communication Infrastructure Testing:** Evaluated Web3 messaging rails (Blockscan Chat, DeBank Hi, and XMTP) to test wallet-to-controller reachability limitations[cite: 47].
+The project is structured into a dual-layer architecture:
+* **The Technical Infrastructure (Dune & SQL):** Verifiable on-chain data extraction logic tracking high-value market flow, filtering automation noise, and scoring wallet behaviors[cite: 8, 52].
+* **The Strategic Framework (Slide Deck):** The attached PDF presentation translates raw data models into commercial business development (BD) pipelines, competitor venue analysis, and communication test results.
+
+---
+
+## Core Analytical Methodology
+
+1. **Market Discovery:** Mapped over $156.9B in cross-chain high-value DEX flow ($10k+ swaps) across Ethereum, Base, Arbitrum, Optimism, and Solana to establish baseline market scale[cite: 9, 11].
+2. **Entity & Infrastructure Screening:** Filtered out known protocols, DEX routers, bridges, and non-commercial noise to isolate true wallet behaviors[cite: 15, 17].
+3. **Behavioral Automation Risk Filtering:** Scanned high-frequency wallets and automated bots—removing accounts executing tens of thousands of programmatic trades—to ensure commercial relevance[cite: 17, 19].
+4. **Liquidity Impact & Scoring:** Built multi-dimensional composite scoring models combining volume scale, average ticket size, human likelihood, routing flexibility, and primary venue concentration[cite: 23, 29].
+5. **Protocol Opportunity Modeling:** Mapped qualified wallets to incumbent competitor venues and modeled hypothetical capture scenarios (5% vs. 10%) to drive targeted business development[cite: 33].
+6. **Communication Infrastructure Testing:** Evaluated Web3 messaging rails (Blockscan Chat, DeBank Hi, and XMTP) to test wallet-to-controller reachability limitations and bridge the gap between discovery and outreach[cite: 38, 45, 50].
 
 ---
 
@@ -23,4 +32,5 @@ This project goes beyond aggregate volume metrics by executing a rigorous, multi
 * **SQL & Data Warehousing:** Custom queries built and executed for on-chain extraction[cite: 52].
 * **Dune Analytics:** Visualizing multi-chain DEX volume, wallet distribution, and venue concentration[cite: 52].
 * **Solscan:** Wallet investigation and transaction-level verification[cite: 52].
+* **Web3 Comms Testing:** Blockscan Chat, DeBank Hi, and XMTP for reachability experiments[cite: 52].
 * **GitHub:** Version control and portfolio presentation.
