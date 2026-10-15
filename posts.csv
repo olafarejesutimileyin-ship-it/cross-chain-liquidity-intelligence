@@ -1,0 +1,82 @@
+post_id,datetime_wat,text,media_path,thread_parent_id,status
+post_01,2026-10-16 09:23:00,"I'm open to junior on-chain and data analyst roles. Over the past month, I analyzed $156.9B in high-value DEX flow across 5 chains to study protocol liquidity and wallet routing. Here is my Dune dashboard and case study: dune.com/the_olafare1 #OnChain #DataAnalytics",,,pending
+post_02,2026-10-16 16:47:00,"High volume does not equal high acquisition value. I analyzed $156.9B in DEX swaps (>= $10k) across Ethereum, Base, Arbitrum, Optimism, and Solana. Here is how I separated protocol noise from actionable wallet intelligence. 1/6",,,pending
+post_03,2026-10-16 16:48:00,"I started with 60,371 unique wallets across 5 chains. Base captured the largest high-value flow at $91.24B, followed by Ethereum ($11.44B) and Arbitrum ($5.48B). But the #1 address was a DEX router logging $96.77B. Volume alone creates false positives. 2/6",,post_02,pending
+post_04,2026-10-16 16:49:00,"Next was behavioral screening. Two Solana wallets logged $983M and $720M across 53k+ and 37k+ trades in 30 days. Under my automation filter, both were flagged as high-risk bots and removed. High volume does not mean human-like. 3/6",,post_03,pending
+post_05,2026-10-16 16:50:00,"After entity and automation filters, only 221 qualified candidate wallets survived. I segmented them by recency: Hot (<48h), Warm (2-7d), and Lapsed (8-30d) so BD teams can prioritize active market participants. 4/6",,post_04,pending
+post_06,2026-10-16 16:51:00,"I then tested wallet outreach via Blockscan Chat, DeBank Hi, and XMTP. The takeaway: addressable does not mean reachable. Most wallets are not registered on web3 comms, creating a final-mile communication gap. 5/6",,post_05,pending
+post_07,2026-10-16 16:52:00,My 8-step framework: Discover → Qualify → Prioritize → Value → Incentivize → Reach → Activate → Measure. You can inspect the SQL queries and interactive Dune dashboard on my profile. 6/6 #DuneAnalytics #DeFi,,post_06,pending
+post_08,2026-10-17 11:14:00,A surprising result from my dataset: Base accounted for $91.24B of the $156.9B in high-value DEX flow (swaps ≥$10k) across the 5 chains analyzed. That is over 58% of all observed institutional-scale swap volume. #OnChain #Base,,,pending
+post_09,2026-10-18 14:38:00,"Why I set a ≥$10,000 swap threshold: in cross-chain DEX analysis, retail trades and micro-swaps dominate transaction count while contributing negligible protocol volume. Isolating ≥$10k trades surfaced 60,371 addresses with an average swap size of $142.8K. #SQL",,,pending
+post_10,2026-10-19 10:43:00,"How I built the entity screening query in Dune SQL: I joined dex.trades with labels.all to identify known MEV contracts, routers, and CEX deposit wallets. This allowed me to remove automated protocol noise before calculating wallet metrics. #DuneAnalytics #SQL",,,pending
+post_11,2026-10-20 15:22:00,"An important analytical limitation: observed flow is historical evidence, not guaranteed future migration. A wallet routing $20M through a DEX demonstrates capacity, but converting that flow requires structured incentives and cryptographic eligibility. #OnChain",,,pending
+post_12,2026-10-21 12:17:00,"30-day high-value DEX flow by chain (swaps ≥$10k):
+
+• Base: $91.24B
+• Ethereum: $11.44B
+• Arbitrum: $5.48B
+• Solana: $152.09M
+• Optimism: $1.00M
+
+Total observed: $156.9B across 60,371 wallets. #DataAnalytics #DuneAnalytics",./content/screenshots/chain_flow_chart.jpg,,pending
+post_13,2026-10-22 17:34:00,"When filtering on-chain DEX data for whale tracking, what minimum transaction threshold do you prefer: $10,000 or $50,000? I used $10k to catch active desks while filtering retail noise, but I'd like to hear how other analysts tune this parameter.",,,pending
+post_14,2026-10-23 09:41:00,"The single highest-volume address in my 30-day dataset recorded ~$96.77B in volume. If you ranked wallets purely by volume, it sat at the top. But investigation showed it was a DEX routing contract (Uniswap, KyberSwap, 0x API). Entity labels are essential. #DeFi",,,pending
+post_15,2026-10-24 13:28:00,"Before focusing on on-chain data, I completed a B.A. in English Language & Literary Studies at Obafemi Awolowo University. That background trained me to examine evidence critically, question surface claims, and communicate complex data clearly. #CareerTransition",,,pending
+post_16,2026-10-25 11:53:00,"Volume without behavioral screening creates false leads. In my Solana dataset, one wallet logged $983.35M across 53,068 trades in 30 days. That is ~1,768 trades per day. It was removed from the candidate pool under my automation filter. #Solana #Analytics",,,pending
+post_17,2026-10-25 18:24:00,"Another Solana wallet logged $720.15M volume across 37,468 trades in 30 days. Despite massive volume, the trade frequency signaled algorithmic market-making or arbitrage rather than discretionary trading. Both were excluded from BD outreach. #OnChain",,,pending
+post_18,2026-10-26 14:12:00,"Lesson learned while analyzing wallet routing: venue count does not equal routing flexibility. Wallet 3cmf... interacted with 7 DEXs, yet 95.61% of its $54.43M volume went through Manifest. Looking only at DEX count would have concealed extreme incumbent lock-in.",,,pending
+post_19,2026-10-27 10:19:00,"Contrast that with Wallet Ai42...: $88.81M volume distributed across 13 DEXs (Manifest $39.33M, BisonFi $27.46M, Tessera $14.55M, Aquifer $2.29M, Jupiter $1.68M). This wallet demonstrates true multi-venue routing and is far more receptive to execution incentives.",,,pending
+post_20,2026-10-28 15:44:00,"How I built the Liquidity Impact Score: I combined 30-day volume (scale), average ticket size (execution strength), and behavioral quality (human-likelihood) into a composite metric. This prevented high-frequency low-ticket bots from outranking genuine high-value traders. #SQL",,,pending
+post_21,2026-10-29 16:32:00,"If you lead protocol growth, which wallet would you prioritize: Candidate A ($13.89M flow, 33% primary DEX share) or Candidate B ($54.43M flow, 95.6% locked into one DEX)? My scoring engine ranked Candidate A higher due to switching feasibility.",,,pending
+post_22,2026-10-30 09:18:00,"Mid-point recap of my cross-chain liquidity portfolio project: I analyzed $156.9B in DEX flow across 60k+ wallets, filtered out $96.7B in router noise, and narrowed the pool to 221 qualified candidates. Linking back to my Day 1 intro post: x.com/the_Jtcrypt/status/intro #OnChain",,,pending
+post_23,2026-10-30 17:42:00,Why Candidate #1 scored 95 while Candidate #3 scored 92: Candidate #1 had $13.89M flow with 33.2% primary venue share (high routing flexibility). Candidate #3 had $54.43M flow but 95.6% venue concentration. High lock-in reduces switching probability. #DataAnalytics,,,pending
+post_24,2026-10-31 11:37:00,"Starting with 60,371 addresses and arriving at 221 qualified candidate wallets is not a data loss—it is the entire objective of analytical qualification. Removing protocols, MEV, and routers leaves a defensible pool for protocol BD teams. #OnChainAnalytics",,,pending
+post_25,2026-11-01 13:51:00,"I segmented the 221 qualified wallets by temporal freshness: Hot (<48h), Warm (2-7 days), and Lapsed (8-30 days). In my 30-day window, 8,289 wallets were active in the prior 48 hours. Targeting recently active wallets ensures outreach reaches engaged controllers. #DeFi",,,pending
+post_26,2026-11-02 12:26:00,"Where qualified Solana DEX liquidity was concentrated in my dataset:
+
+• Manifest: $741.59M
+• PumpSwap: $425.78M
+• Jupiter: $395.98M
+• Tessera: $124.50M
+• Meteora: $72.34M
+
+Qualified liquidity clusters around specific execution hubs. #Solana #DuneAnalytics",./content/screenshots/venue_flow_chart.jpg,,pending
+post_27,2026-11-03 15:14:00,"Across all 60,371 high-value wallets in the 30-day window, the average swap execution size was $142,837. This confirmed that filtering for ≥$10k trades effectively isolated institutional and high-net-worth execution from retail flow. #OnChain",,,pending
+post_28,2026-11-04 10:48:00,"At Oguntechies, I built an AI-assisted Python workflow with the YouTube Data API to collect and structure prospect data across 4,000+ channels. That experience structuring data pipelines and qualifying prospects directly translates to my on-chain wallet screening work.",,,pending
+post_29,2026-11-05 16:38:00,"In my case study, I modeled opportunity from Raydium's perspective using 5% and 10% volume capture scenarios. For a wallet routing $173.75M ($146.17M on JupiterZ), capturing 5% represents $8.69M in new flow. Observed volume is evidence; capture is a scenario. #DeFi",,,pending
+post_30,2026-11-06 09:33:00,"Testing web3 outreach: I entered a target address into Blockscan Chat. The interface recognized the address and initiated a chat, but messages remain unencrypted until the recipient signs in. Address acceptance does not prove the controller will ever see the message. #Web3",,,pending
+post_31,2026-11-07 14:27:00,"Testing DeBank Hi: the target wallet was discoverable and allowed drafting a personalized BD pitch. However, sending required a $1.00 paid-send fee. This introduces real economic cost to web3 cold outreach without guaranteeing delivery or response. #OnChain",,,pending
+post_32,2026-11-08 11:12:00,"Testing XMTP: querying the target wallet returned 'Address not registered on XMTP', blocking direct message creation entirely. A public wallet address is visible on-chain, but it is not a universal messaging identity. Reachability requires prior protocol onboarding. #XMTP",,,pending
+post_33,2026-11-08 18:05:00,"The communication gap formula:
+
+Qualified Wallets ≠ Reachable Wallets
+Reachable Wallets ≠ Engaged Prospects
+
+On-chain discovery is permissionless; human communication remains highly fragmented across wallets. #DataAnalytics",,,pending
+post_34,2026-11-09 13:46:00,Lesson learned: The final bottleneck in protocol user acquisition is not data discovery—it is controller reachability. Building SQL queries to find $100M+ volume wallets is straightforward; establishing an authenticated communication channel is where the funnel breaks.,,,pending
+post_35,2026-11-10 16:15:00,"How is your team currently bridging the on-chain reachability gap: web3 messaging protocols (XMTP/Blockscan), on-chain transaction memos, or matching ENS/SNS handles to off-chain profiles? I'd love to hear what channels yield actual conversion.",,,pending
+post_36,2026-11-11 10:25:00,"The full wallet communication funnel I defined:
+
+Addressable → Delivered → Visible → Attention → Response → Acquisition.
+
+Each step has severe drop-off. Message submission is not delivery, and delivery does not guarantee controller attention. #OnChainAnalytics",,,pending
+post_37,2026-11-12 15:39:00,"I structured the qualified leads into a Top 100 Priority Queue backed by a 50-Wallet Reserve. If a target wallet fails identity or reachability checks during BD research, it is replaced from the reserve to maintain an active pipeline depth. #Growth #Analytics",,,pending
+post_38,2026-11-13 09:27:00,"Week 5 recap: As I near the end of my 5-week portfolio showcase, here is the full progression from raw SQL extraction to wallet qualification, scoring models, and outreach testing. Linking back to my Day 1 project intro: x.com/the_Jtcrypt/status/intro #OnChain #SQL",,,pending
+post_39,2026-11-13 17:18:00,"DEX venue execution concentration: In my 30-day dataset, top venue volume on Base exceeded $103B. High-value liquidity does not disperse uniformly; it concentrates heavily in a few core automated market makers. #Base #DeFi",,,pending
+post_40,2026-11-14 11:42:00,"Arbitrum captured $5.48B in high-value DEX volume (swaps ≥$10k) in my 30-day sample. While smaller than Base's $91.24B, Arbitrum showed strong consistency in institutional execution size across established perpetual and swap venues. #Arbitrum",,,pending
+post_41,2026-11-15 14:19:00,Optimism registered $1.00M in high-value DEX swaps (≥$10k) during the analyzed 30-day window. This stark difference compared to Base and Arbitrum highlights how high-value trading flow was heavily concentrated in specific Layer-2 ecosystems during this period. #OnChain,,,pending
+post_42,2026-11-15 19:35:00,"Ethereum L1 recorded $11.44B in high-value DEX swaps across the same 30-day window, maintaining its role as the foundation for large ticket settlement even as Base absorbed substantial high-frequency volume. #Ethereum #DataAnalytics",,,pending
+post_43,2026-11-16 10:54:00,"In protocol growth architecture, a wallet plays a triple role:
+
+1. Prospect ID: identifies the economic opportunity
+2. Eligibility Key: gates access via smart contract allowlists
+3. Attribution Key: tracks post-incentive retention and volume.
+
+#OnChainAnalytics",,,pending
+post_44,2026-11-16 16:44:00,Why allowlists beat manual BD: encoding qualified wallets into smart contract allowlists enables cryptographic verification of address ownership without requiring the counterparty to reveal real-world identity. This aligns with crypto-native privacy. #Web3,,,pending
+post_45,2026-11-17 12:31:00,"Why I write raw SQL on Dune rather than using packaged analytics platforms: raw SQL gives complete auditability over edge cases, transaction exclusions, and custom scoring logic. Every metric in my dashboard can be traced back to raw contract events. #SQL #DuneAnalytics",,,pending
+post_46,2026-11-17 18:22:00,"Community validation: Having protocol researchers engage with my Dune dashboard reinforced that teams need defensible, reproducible data rather than high-level vanity metrics. Data integrity builds trust. #OnChain",,,pending
+post_47,2026-11-18 11:15:00,"Key takeaway from my 5-week study: On-chain data can reveal where liquidity moves, but converting that intelligence into durable protocol growth requires multi-stage qualification, reachability infrastructure, and strict retention attribution. #DeFi #Analytics",,,pending
+post_48,2026-11-18 17:09:00,The entire 8-stage framework: Discover → Qualify → Prioritize → Value → Incentivize → Reach → Activate → Measure. Moving from raw DEX logs to commercial execution is what transforms data into decision intelligence. #DataAnalytics,,,pending
+post_49,2026-11-19 10:14:00,"35 days, 5 chains, 60,371 wallets analyzed, and 221 qualified candidates identified. Thank you to everyone who followed, shared feedback, and explored the Dune dashboard. You can review the full project and queries on Dune: dune.com/the_olafare1 #OnChain #DuneAnalytics",,,pending
+post_50,2026-11-19 16:42:00,"I'm actively looking for junior on-chain / data analyst roles at crypto protocols, analytics firms, and funds. If your team needs someone to build SQL models, evaluate liquidity flows, and uncover wallet intelligence, my DMs are open. Let's connect! #OpenToWork #Web3Jobs",,,pending
